@@ -1,0 +1,90 @@
+<app-navigation-menu></app-navigation-menu>
+<app-slider-image></app-slider-image>
+
+<!-- <section class="bg-color-4 mx-16 my-10 w-auto h-auto flex justify-center flex-col py-8 space-y-5 rounded-xl *:px-36">
+    <h1 class="text-3xl text-center text-color-2 font-semibold uppercase">Bienvenidos a la Veterinaria Tomy</h1>
+    <h1 class="text-4xl text-center text-color-1 font-bold capitalize">Un Gran Lugar donde Salvamos Vidas</h1>
+    <p class=" text-center text-xl font-normal">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia commodi inventore error odit quae nam perferendis cupiditate? Rerum, necessitatibus obcaecati, amet maxime corrupti ipsa sequi quis iure beatae, recusandae esse?</p>
+    <button  (click)="valor()" *ngIf="valorContent" class="text-color-2 text-xl hover:text-color-3 flex mx-auto space-x-3 items-center">
+        <h1 class="capitalize">Mas información</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.3" stroke="currentColor" class="size-7 pt-1">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+        </svg>          
+    </button>
+
+    <div *ngIf="valor12" class="space-y-10 flex flex-col *:flex *:flex-col *:items-center *:space-y-4">
+        <div>
+            <h2 class="text-color-1 text-2xl font-bold border-b-4 border-color-2">Mision</h2>
+            <p class="text-color-5 text-xl font-normal text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat itaque rerum unde illo, nulla ea aliquid minima ad asperiores quidem voluptatum, reiciendis, dolorem ut deleniti debitis rem nobis vero.</p>
+        </div>
+        <div>
+            <h2 class="text-color-1 text-2xl font-bold border-b-4 border-color-2">Visión</h2>
+            <p class="text-color-5 text-xl font-normal text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quaerat itaque rerum unde illo, nulla ea aliquid minima ad asperiores quidem voluptatum, reiciendis, dolorem ut deleniti debitis rem nobis vero.</p>
+        </div>
+    </div>
+</section> -->
+
+<section class="content-info-main">
+    <h2 class="h2-style-global">Bienvenidos a la Veterinaria Tomy</h2>
+    <h1 class="h1-style-global">un gran lugar donde salvamos vidas</h1>
+    <p class="p-style-global">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, veniam laudantium voluptas saepe non aspernatur modi excepturi itaque, atque consequatur a sit quaerat sapiente! Velit aperiam reprehenderit consequatur voluptas voluptatum?</p>
+    <button class="buttom-style" (click)="hiddenText()" *ngIf="hiddenButton" >Leer mas <i class="fa-solid fa-arrow-right fa-lg" style="color: #1f2b6c;"></i></button>
+    <ng-container *ngIf="textHidden" >
+        <h2 class="h2-style-global">Vision</h2>
+        <p class="p-style-global">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, veniam laudantium voluptas saepe non aspernatur modi excepturi itaque, atque consequatur a sit quaerat sapiente! Velit aperiam reprehenderit consequatur voluptas voluptatum?</p>
+        <h2 class="h2-style-global">Mision</h2>
+        <p class="p-style-global">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, veniam laudantium voluptas saepe non aspernatur modi excepturi itaque, atque consequatur a sit quaerat sapiente! Velit aperiam reprehenderit consequatur voluptas voluptatum?</p>
+        
+        <button class="buttom-style" (click)="lessText()" >Leer menos <i class="fa-solid fa-arrow-right fa-lg" style="color: #1f2b6c;"></i></button>
+    </ng-container>
+</section>
+
+<app-component-service></app-component-service>
+<app-component-products></app-component-products>
+
+<div class="content-info-main">
+    <h2 class="h2-style-global">Atencion de confianza</h2>
+    <h1 class="h1-style-global">Nuestros Especialistas</h1>
+    <div class="w-[20rem] h-[34rem] ">
+        <img src="image/doc-veterinary.jpg" alt="d" class="w-full h-[22rem] rounded-t-xl">
+        <div class="w-full h-[12rem]">
+            <div class="w-full h-[9rem] flex flex-col items-center justify-center bg-color-3 space-y-1">
+                <h3 class="font-inter text-color-1 text-[1rem] font-normal capitalize">Juan  Tomy Verbamp</h3>
+                <h4 class="font-inter text-color-1 text-[1.2rem] font-bold uppercase">Medico Veterinario</h4>
+                <div class="flex space-x-3 py-2">
+                    <i class="fa-brands fa-facebook fa-xl text-color-1 "></i>
+                    <i class="fa-brands fa-twitter  fa-xl text-color-1 "></i>
+                </div>
+            </div>
+            <div class="contact-button-style">Ver perfil</div>
+        </div>
+    </div>
+</div>
+
+
+<app-panel-contacts></app-panel-contacts>
+<app-footer-page></app-footer-page>
+
+<!-- <div class="bg-color-4 mx-16 my-10 w-auto h-auto flex justify-center flex-col py-8 space-y-5 rounded-xl">
+    <h1 class="text-3xl text-center text-color-2 font-semibold uppercase">Atención de confianza</h1>
+    <h1 class="text-4xl text-center text-color-1 font-bold capitalize">Nuestros Especialistas</h1>
+    <div class="w-[25rem] h-[60svh] flex justify-center mx-auto rounded-xl flex-col border shadow-lg">
+        <img src="image/logo-company.jpg" alt="" class="w-full h-[70%] rounded-t-xl">
+        <div class="w-full h-[30%]">
+            <div class="w-full h-[70%] bg-color-3 flex flex-col items-center justify-center space-y-2">
+                <h1 class="text-xl font-normal text-color-1">Tomy Huaman</h1>
+                <h1 class="text-xl font-semibold text-color-1">Medico Veterinario</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.9" stroke="currentColor" class="size-8 text-color-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                </svg>                  
+            </div>
+            <div class="w-full h-[30%] bg-color-1 rounded-b-xl cursor-pointer capitalize text-color-3 text-xl font-light flex justify-center items-center hover:text-white">view profile</div>
+            
+        </div>
+    </div>  
+</div>
+
+<app-panel-contacts></app-panel-contacts>
+
+<app-footer-page></app-footer-page> -->
+

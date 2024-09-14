@@ -1,0 +1,32 @@
+<app-navigation-menu></app-navigation-menu>
+<app-portada
+  [portadaImagenUrl]="'image/VACUNA.jpg'"
+  [portadaTexto]="'SERVICIOS'">
+</app-portada>
+<div class="bg-color-4 mx-global my-4 w-auto py-8 grid grid-cols-3 gap-8">
+    <div *ngFor="let item of serviceLists" class="bg-white border rounded-xl w-full min-h-[0svh] flex flex-col">
+        <div class="relative w-full h-[60%]">
+            <!-- Imagen -->
+            <img [src]="item.imageUrl" alt="{{item.name}}" class="w-full h-full rounded-t-xl border">
+            <!-- Ícono del libro sobre la imagen usando FontAwesome -->
+            <div class="absolute -bottom-7 right-7 w-14 h-14 rounded-full bg-color-1 flex items-center justify-center">
+                <i class="fas fa-book text-white text-2xl"></i>
+            </div>
+        </div>
+        <!-- Contenido de texto -->
+        <div class="flex flex-col px-4 py-3 space-y-3 flex-grow">
+            <h1 class="text-color-1 font-semibold text-2xl capitalize">{{item.name}}</h1>
+            <p class="line-clamp-3">{{item.description}}</p>
+            <button type="button" class="text-start text-color-2 capitalize flex items-center space-x-4 group mt-auto">
+                <h1 class="group-hover:text-color-3">
+                    <a [routerLink]="['/service', item.name]">Leer más</a>
+                </h1>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.3" stroke="currentColor" class="size-6 text-color-1 group-hover:text-color-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<app-footer-page></app-footer-page>

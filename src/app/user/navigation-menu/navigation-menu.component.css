@@ -1,0 +1,19 @@
+.contacts-style-1{
+    @apply text-color-1 font-inter font-medium text-[1rem] uppercase;
+}
+.contacts-style-2{
+    @apply text-color-2 font-inter font-medium text-[1rem] capitalize;
+}
+.items-style-sidebar{
+    @apply  text-white font-inter font-medium text-[1.2rem] capitalize hover:text-color-3 cursor-pointer;
+}
+
+/* panel superios */
+
+/* .content-panel-xl{
+    @apply flex justify-between items-center h-20 bg-white;
+}
+
+.first-panel-xl{
+    @apply flex space-x-4 items-center ;
+} */

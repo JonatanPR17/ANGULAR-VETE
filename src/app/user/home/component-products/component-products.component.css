@@ -1,0 +1,7 @@
+.content-products{
+    @apply grid  grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 2xl:grid-cols-5 w-full gap-5  ;
+}
+
+/* .content-style-products{
+    @apply col-span-1 sm:col-span-1 md:col-span-2 lg:col-span-3 xl:col-span-1
+} */
